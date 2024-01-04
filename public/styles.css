@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --black: black;
+  --background: #fcfcfc;
+  --linksColor: #3810db;
+}
+
+/* Global */
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+
+  background: var(--background);
+}
+
+/* Nav */
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: center;
+  height: 6.8rem; /* 120px */
+  padding: 5px 10%;
+}
+
+.header h1 {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header .navLinks {
+  list-style: none;
+}
+
+.header .navLinks li {
+  display: inline-block;
+  padding: 0 20px;
+
+  margin: 5px;
+}
+
+.header .navLinks a {
+  color: var(--black); /* color: #3810db; */
+
+  text-decoration: none;
+}
+
+.header .navLinks a:hover {
+  color: var(--linksColor);
+}
+
+.header .navLinks li:hover {
+  transform: scale(1.1);
+}
+
+.header .btn button {
+  margin-left: 20px;
+  font-weight: 700;
+
+  padding: 9px 25px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+  transform: scale(1.1);
+}
+
+/* About */
+
+.about {
+  margin-bottom: 2rem;
+}
+
+/* Projects */
+
+.ProjectContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.headingTitle {
+  font-size: 1.5rem;
+
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+}
+
+.textContent {
+  margin-left: 1.5rem;
+}
+
+.projectHolder {
+  /*   border: 2px solid; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border-radius: 15px;
+  width: 25rem;
+  height: 34rem; /* 34 */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1.2rem;
+}
+
+.projectHolder h3 {
+  margin-bottom: 1rem;
+}
+
+.projectImage {
+  border-bottom: 1px solid gray;
+
+  height: 40%;
+}
+
+.projectContent {
+  /*  border: 1px solid var(--black); */
+  height: 60%;
+}
+
+.projectContent h3 {
+  margin-top: 1rem;
+}
+
+.projectImage img {
+  width: 100%;
+}
+
+.buttons {
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.siteButton {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.siteButton:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease 0s;
+}
+
+.siteButton a,
+.codeButton a {
+  color: white;
+  text-decoration: none;
+}
+
+.codeButton {
+  background-color: #ed2c49;
+}
+
+/* skills */
+
+.iconsImages {
+  height: 6.5rem;
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skillContainer li {
+  list-style: none;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
