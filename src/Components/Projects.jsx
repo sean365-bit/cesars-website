@@ -1,3 +1,6 @@
+import Contact from "./Contact";
+import { useState } from "react";
+
 export default function Projects({
   Title,
   src,
@@ -41,6 +44,8 @@ export default function Projects({
 }
 
 export function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="header">
       <div>
@@ -50,7 +55,7 @@ export function Nav() {
       <nav>
         <ul className="navLinks">
           <li>
-            <a href="#AboutSection">About</a>
+            <a href="#AboutSection">About Me</a>
           </li>
           <li>
             <a href="#idSection">Projects</a>
@@ -60,9 +65,11 @@ export function Nav() {
           </li>
         </ul>
       </nav>
-      <a href="#skillsSection" className="btn">
-        <button>Contact</button>
-      </a>
+
+      <button onClick={() => setIsOpen(true)} className="btn">
+        Contact
+      </button>
+      <Contact open={isOpen} onClose={() => setIsOpen(false)} />
     </header>
   );
 }

@@ -20,7 +20,7 @@ export default function App() {
           siteLink={"https://cesars-age-calculator.netlify.app/"}
           siteCode={"https://github.com/sean365-bit/Age-calculator"}
           content={
-            "I Enjoyed building this Application with React JS and CSS, It basically calculates how old a person is by providing our date of birth, I implemented as well some input validation using the React Hook form."
+            "I enjoyed building this application with React JS and CSS. It basically calculates how old a person is by providing their date of birth. I also implemented some input validation using the React Hook Form."
           }
         />
 
@@ -31,7 +31,7 @@ export default function App() {
           siteLink={"https://cesars-newsletter.netlify.app/"}
           siteCode={"https://github.com/sean365-bit/cesars-newsletter"}
           content={
-            "This Newsletter App was developed using React JS and CSS, It allows us to suscribe to this newsletter by entering our email address, I implemented an email validation function as well so incorrect email addresses cannot be used. A successful message is displayed once a valid email addres is entered."
+            "This Newsletter App was developed using React JS and CSS. It allows us to subscribe to this newsletter by entering our email address. I implemented an email validation function as well, so incorrect email addresses cannot be used. A successful message is displayed once a valid email address is entered."
           }
         />
 
@@ -42,13 +42,13 @@ export default function App() {
           siteLink={"https://sean365-bit.github.io/Fylo.github.io/"}
           siteCode={"https://github.com/sean365-bit/Fylo.github.io"}
           content={
-            "Using HTML, CSS and JavaScript, I developed this Landing page for the Fylo company, in this page you can see the Front-end part of this application, as well as the description of the services the company provides."
+            "Using HTML, CSS, and JavaScript, I developed this landing page for the Fylo company. On this page, you can see the front-end part of this application, as well as the description of the services the company provides."
           }
         />
       </div>
 
       <Skills />
-      <span className="footer" >Made with &#129505; in El Salvador</span>
+      <span className="footer">Made with &#129505; in El Salvador</span>
     </>
   );
 }

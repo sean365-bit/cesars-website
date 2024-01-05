@@ -3,7 +3,7 @@
 :root {
   --black: black;
   --background: #fcfcfc;
-  --linksColor: #3810db;
+  --linksColor: #2ecc71;
 }
 
 /* Global */
@@ -61,7 +61,7 @@
   transform: scale(1.1);
 }
 
-.header .btn button {
+.header .btn {
   margin-left: 20px;
   font-weight: 700;
 
@@ -74,8 +74,75 @@
   transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover {
+.header .btn:hover {
   transform: scale(1.1);
+}
+
+/* Contact */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  background-color: var(--background);
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  z-index: 1000;
+
+  border-radius: 25px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.iconsImagesModal {
+  height: 3rem;
+}
+
+.modal h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  background: var(--background);
+}
+
+.modal p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.btnModal {
+  margin-left: 20px;
+  font-weight: 700;
+
+  padding: 9px 25px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.modalBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin-bottom: 1.5rem;
 }
 
 /* About */
@@ -132,7 +199,6 @@
 }
 
 .projectContent {
-  /*  border: 1px solid var(--black); */
   height: 60%;
 }
 
@@ -155,7 +221,7 @@
 .siteButton {
   background-color: #555555;
   border: none;
-  color: white;
+  color: var(--background);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
